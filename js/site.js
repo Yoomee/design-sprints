@@ -20,3 +20,7 @@ $('.scroll').click(function (e) {
     scrollTop: $(this.hash).offset().top
   });
 });
+
+// AjaxChimp
+
+$('.ajaxChimpForm').ajaxChimp();
