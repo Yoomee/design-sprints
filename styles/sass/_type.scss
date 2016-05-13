@@ -13,6 +13,7 @@ body {
 }
 a:focus, a:hover {
   text-decoration: none;
+  transition: all 0.5s ease;
 }
 h1, h2, h3, h4, h5 {
   font-family: 'elloello', sans-serif;
@@ -22,6 +23,11 @@ h1 {
   font-size: 46px;
   line-height: 50px;
   margin-bottom: -20px;
+  @media (max-width: 767px) {
+    font-size: 40px;
+    line-height: 50px;
+    margin-bottom: -20px;
+  }
 }
 h2 {
   font-size: 30px;
@@ -40,8 +46,12 @@ p {
 }
 .lead {
   font-size: 24px;
-  font-weight: 300;
   line-height: 40px;
+  font-weight: 300;
+  @media (max-width: 767px) {
+    font-size: 18px;
+    line-height: 30px;
+  }
 }
 
 // Text modifiers

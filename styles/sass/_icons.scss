@@ -55,10 +55,10 @@ i {
   vertical-align: middle;
   padding-top: 17px;
   color: #FFFFFF;
-  transition: all 0.5s ease;
+  transition: all 0.3s ease;
   &:hover, &:focus {
     color: #FFFFFF;
-    transform: translateY(-5px);
+    transform: scale(1.2);
     text-decoration: none;
   }
 }

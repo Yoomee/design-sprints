@@ -1711,6 +1711,9 @@ tbody.collapse.in {
   border-top: 1px solid transparent;
   -webkit-overflow-scrolling: touch;
 }
+.navbar-collapse .nav > li > a {
+  width: 100%;
+}
 .navbar-collapse.in {
   overflow-y: auto;
 }
@@ -1795,38 +1798,48 @@ tbody.collapse.in {
   border-width: 1px 0 0;
 }
 .navbar-brand {
-  float: left;
-  padding: 15px 15px;
+  float: none;
+  display: inline-block;
+  padding: 10px 15px 15px;
   font-size: 18px;
   line-height: 20px;
   height: 50px;
   color: #FFFFFF;
+  text-align: center;
 }
 .navbar-brand:hover,
 .navbar-brand:focus {
   text-decoration: none;
 }
 .navbar-brand > img {
-  display: block;
-  width: 250px;
+  display: inline-block;
+  width: 200px;
 }
 @media (min-width: 768px) {
   .navbar > .container .navbar-brand,
   .navbar > .container-fluid .navbar-brand {
     margin-left: -15px;
   }
+  .navbar-brand {
+    float: left;
+    width: auto;
+  }
+  .navbar-brand > img {
+    width: 250px;
+  }
 }
 .navbar-toggle {
-  position: relative;
-  float: right;
-  margin-right: 15px;
+  position: absolute;
+  float: none;
+  margin-right: 0;
   padding: 9px 10px;
-  margin-top: 8px;
+  margin-top: 4px;
   margin-bottom: 8px;
-  background-color: transparent;
+  background-color: rgba(0, 0, 0, 0);
   background-image: none;
-  border: 1px solid transparent;
+  border: 1px solid rgba(0, 0, 0, 0);
   border-radius: 4px;
+  right: 0;
 }
 .navbar-toggle:focus {
   outline: 0;
@@ -1987,7 +2000,12 @@ tbody.collapse.in {
   }
 }
 .media {
-  margin-top: 15px;
+  margin-top: 40px;
+}
+@media (min-width: 768px) {
+  .media {
+    margin-top: 80px;
+  }
 }
 .media:first-child {
   margin-top: 0;
@@ -2002,6 +2020,7 @@ tbody.collapse.in {
 }
 .media-object {
   display: block;
+  max-width: 280px;
 }
 .media-object.img-thumbnail {
   max-width: none;
@@ -2010,9 +2029,21 @@ tbody.collapse.in {
 .media > .pull-right {
   padding-left: 50px;
 }
+@media (max-width: 767px) {
+  .media-right,
+  .media > .pull-right {
+    display: none !important;
+  }
+}
 .media-left,
 .media > .pull-left {
   padding-right: 50px;
+}
+@media (max-width: 767px) {
+  .media-left,
+  .media > .pull-left {
+    display: none !important;
+  }
 }
 .media-left,
 .media-right,

@@ -23,4 +23,22 @@
 }
 .btn-outline {
   border: 2px solid #FFFFFF;
+  &:hover, &:focus {
+    background: #FFFFFF;
+  }
+  &.btn-google {
+    &:hover, &:focus {
+      color: $google-blue;
+    }
+  }
+  &.btn-blue {
+    &:hover, &:focus {
+      color: $ym-blue;
+    }
+  }
+  &.btn-red {
+    &:hover, &:focus {
+      color: $ym-red;
+    }
+  }
 }
