@@ -1,0 +1,59 @@
+// Forms
+
+.form-table {
+  display: table;
+  margin: 0 auto;
+}
+.form-table_input {
+  display: table-cell;
+  padding: 0;
+}
+.form-input {
+  height: 55px;
+  width: 100px;
+  background: #FFFFFF;
+  border: 2px solid transparent;
+  border-radius: 4px 0 0 4px;
+  padding-left: 20px;
+  padding-right: 20px;
+  width: 100%;
+  transition: all 0.5s ease;
+  @media (min-width: 768px) {
+    width: 360px;
+  }
+  &:focus {
+    border: 2px solid $ym-green;
+    outline: 0;
+  }
+}
+.form-btn {
+  border-radius: 0 4px 4px 0;
+  display: block;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  height: 55px;
+  padding-left: 20px;
+  padding-right: 20px;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 1;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  cursor: pointer;
+  user-select: none;
+  border: 0;
+  transition: all 0.5s ease;
+  background: $ym-green;
+  position: relative;
+  top: -1px;
+}
+.form-errors {
+  margin-top: 10px;
+  &.error {
+    color: $ym-red;
+  }
+  &.valid {
+    color: $ym-green;
+  }
+}

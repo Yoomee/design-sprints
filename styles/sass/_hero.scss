@@ -1,0 +1,11 @@
+// Hero
+
+.hero {
+  background: $ym-blue;
+}
+.hero_content {
+  padding: 120px 0;
+  @media (max-width: 767px) {
+    padding: 20px 0;
+  }
+}

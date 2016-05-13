@@ -1,0 +1,48 @@
+// General
+
+.section {
+  padding: 40px 0;
+  @media (min-width: 768px) {
+    padding: 80px 0;
+  }
+}
+.section-blue {
+  background: $ym-grey;
+}
+.section-blue--alt {
+  background: $google-blue;
+}
+.section-red {
+  background: $ym-red;
+}
+.section-twitter {
+  background: $twitter-blue;
+}
+.section-facebook {
+  background: $facebook-blue;
+}
+.section-50 {
+  width: 100%;
+  float: none;
+  padding: 40px 0;
+  @media (min-width: 767px) {
+    width: 50%;
+    float: left;
+    padding: 60px 0;
+  }
+}
+.icon-list {
+  li {
+    display: inline-block;
+    padding: 0 15px;
+    a {
+      display: block;
+    }
+  }
+}
+.external-logo {
+  height: 50px;
+  @media (min-width: 767px) {
+    height: 60px;
+  }
+}
